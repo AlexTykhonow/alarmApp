@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.data;
 
 import android.content.ContentValues;
 import android.content.Context;

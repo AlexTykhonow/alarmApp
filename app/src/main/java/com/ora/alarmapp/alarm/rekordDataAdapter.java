@@ -1,25 +1,25 @@
 
-package com.ora.alarmapp;
+package com.ora.alarmapp.alarm;
 
 import android.annotation.SuppressLint;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ora.alarmapp.R;
+import com.ora.alarmapp.util.Rekord;
+
 import java.util.Calendar;
 import java.util.List;
 
-import static com.ora.alarmapp.DatesFactory.getStringFormat;
+import static com.ora.alarmapp.data.DatesFactory.getStringFormat;
 
 
 public class rekordDataAdapter extends RecyclerView.Adapter<rekordDataAdapter.rekordViewHolder> implements View.OnTouchListener {

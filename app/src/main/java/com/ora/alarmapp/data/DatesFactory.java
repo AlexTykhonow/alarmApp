@@ -1,14 +1,11 @@
-package com.ora.alarmapp;
-
-import android.text.format.DateFormat;
-import android.util.Log;
+package com.ora.alarmapp.data;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.ora.alarmapp.Constants.DEFAULT_SERVER_DATE_FORMAT;
-import static com.ora.alarmapp.Constants.MAIN_DATE_FORMAT_PATTERN;
+import static com.ora.alarmapp.util.Constants.DEFAULT_SERVER_DATE_FORMAT;
+import static com.ora.alarmapp.util.Constants.MAIN_DATE_FORMAT_PATTERN;
 
 public class DatesFactory {
     private static SimpleDateFormat serverFormat = new SimpleDateFormat(DEFAULT_SERVER_DATE_FORMAT);

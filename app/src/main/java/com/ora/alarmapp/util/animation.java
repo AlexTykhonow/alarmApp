@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.util;
 
 import android.view.animation.AlphaAnimation;
 

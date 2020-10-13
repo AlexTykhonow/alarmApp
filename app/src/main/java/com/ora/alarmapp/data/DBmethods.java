@@ -1,10 +1,12 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.data;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
+import com.ora.alarmapp.data.DBHelper;
 
 public class DBmethods {
 

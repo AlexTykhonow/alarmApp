@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.util;
 
 public class Rekord {
     private String content;

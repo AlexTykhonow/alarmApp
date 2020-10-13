@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.alarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -7,8 +7,10 @@ import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 
+import com.ora.alarmapp.data.DataManager;
+import com.ora.alarmapp.util.Rekord;
+
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class AlarmManagerHelper {
     private AlarmManager alarmManager;
@@ -23,7 +25,7 @@ public class AlarmManagerHelper {
 
     public static void setAlarm(Context context, int id, long timeMillis){
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent alarmIntent = new Intent(context, com.ora.alarmapp.AlarmReceiver.class);
+        Intent alarmIntent = new Intent(context, AlarmReceiver.class);
         alarmIntent.putExtra("requestCode", id);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         Log.e("ALARM MANAGER HELPER"," is ok");
@@ -48,7 +50,7 @@ public class AlarmManagerHelper {
     public static void cancelAlarm(Context context,int id){
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 
-        Intent alarmIntent = new Intent(context, com.ora.alarmapp.AlarmReceiver.class);
+        Intent alarmIntent = new Intent(context, AlarmReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         alarmManager.cancel(pendingIntent);
         //Log.e("ALARM MANAGER HELPER", "cancel alarm ID: "+ id);

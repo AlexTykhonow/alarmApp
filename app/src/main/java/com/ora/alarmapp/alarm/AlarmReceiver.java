@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.alarm;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,11 +7,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.PowerManager;
 import android.util.Log;
-import android.widget.Toast;
+
+import com.ora.alarmapp.data.DBHelper;
+import com.ora.alarmapp.data.DBmethods;
 
 import java.util.Calendar;
 
-import static com.ora.alarmapp.Constants.ALARM_RECEIVER_POWER_MANAGER_TAG;
+import static com.ora.alarmapp.util.Constants.ALARM_RECEIVER_POWER_MANAGER_TAG;
 
 public class AlarmReceiver extends BroadcastReceiver {
 

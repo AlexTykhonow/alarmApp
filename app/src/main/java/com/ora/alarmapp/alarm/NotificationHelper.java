@@ -1,4 +1,4 @@
-package com.ora.alarmapp;
+package com.ora.alarmapp.alarm;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -7,8 +7,10 @@ import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
-import static com.ora.alarmapp.Constants.NOTIFICATION_CHANNEL_ID;
-import static com.ora.alarmapp.DatesFactory.getStringFormat;
+import com.ora.alarmapp.R;
+
+import static com.ora.alarmapp.util.Constants.NOTIFICATION_CHANNEL_ID;
+import static com.ora.alarmapp.data.DatesFactory.getStringFormat;
 
 public class NotificationHelper {
 
