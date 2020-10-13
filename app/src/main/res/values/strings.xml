@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">alarmApp</string>
+    <string name="selectHour">Set Hour</string>
+    <string name="cancel">Delete</string>
+    <string name="accept">Accept</string>
+
+</resources>

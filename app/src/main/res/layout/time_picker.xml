@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/headerOfTimePicker"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+        android:background="@color/black"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layoutWithbutton"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:background="@color/white"
+        android:layout_below="@+id/timePicker">
+
+        <Button
+            android:id="@+id/cancelTimePicker"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cancel"
+            />
+        <Button
+            android:id="@+id/applyTimePicker"
+
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:stateListAnimator="@null"
+            android:textStyle="bold"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:text="@string/accept"
+
+            />
+    </LinearLayout>
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:timePickerMode="spinner"
+        android:scrollbarStyle="insideInset"
+        android:layout_below="@+id/headerOfTimePicker"
+        />
+
+</RelativeLayout>
